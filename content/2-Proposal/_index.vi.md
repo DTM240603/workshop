@@ -6,8 +6,8 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# AI-Powered Data Extraction & Summarization Platform
-## Dự án nhóm: Giải pháp tự động hoá thu thập và tổng hợp dữ liệu sử dụng AWS & Amazon Bedrock
+# CloudBrief
+## Dự án nhóm: Hệ thống thu thập và tóm tắt tin tức công nghệ theo hướng EC2-first
 
 ### 1. Tóm tắt điều hành  
 Dự án "AI-Powered Data Extraction & Summarization Platform" được thiết kế và phát triển bởi nhóm chúng em nhằm giải quyết bài toán tự động thu thập, trích xuất và tóm tắt khối lượng lớn dữ liệu từ các nguồn API bên ngoài. Thay vì xử lý thủ công tốn thời gian, nền tảng tận dụng sức mạnh của Amazon Bedrock (Generative AI) kết hợp với kiến trúc AWS có khả năng mở rộng cao (EC2 Auto Scaling, SQS, EventBridge) để xử lý dữ liệu định kỳ một cách hoàn toàn tự động, an toàn và tối ưu chi phí.
