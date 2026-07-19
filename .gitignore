@@ -1,0 +1,8 @@
+public/
+resources/
+.tools/
+
+.DS_Store
+.hugo_build.lock
+.hugo_build.lock.bak
+.tmp-write-test
