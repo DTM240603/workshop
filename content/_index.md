@@ -33,7 +33,7 @@ chapter: false
 
 &emsp; **Academic Supervisor:** Vo Pham Thanh Luan
 
-<img src="/images/avatar.jpg" alt="Your profile picture" width="700">
+![Your profile picture](/images/avatar.jpg)
 
 ### Report Content
 

@@ -33,7 +33,7 @@ chapter: false
 
 &emsp; **Giảng viên hướng dẫn:** Võ Phạm Thành Luân
 
-<img src="/images/avatar.jpg" alt="Ảnh đại diện của bạn" width="700">
+![Ảnh đại diện của bạn](/images/avatar.jpg)
 
 ### Nội dung báo cáo
 
