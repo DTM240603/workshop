@@ -10,7 +10,7 @@ pre: " <b> 2. </b> "
 ## Group Project: EC2-first Technology News Collection and Summarization System
 
 ### 1. Executive Summary  
-The "AI-Powered Data Extraction & Summarization Platform" project is designed and developed by our team to solve the problem of automatically collecting, extracting, and summarizing large volumes of data from external APIs. Instead of time-consuming manual processing, the platform leverages the power of Amazon Bedrock (Generative AI) combined with a highly scalable AWS architecture (EC2 Auto Scaling, SQS, EventBridge) to process data periodically in a fully automated, secure, and cost-optimized manner.
+The "CloudBrief" project is designed and developed by our team to solve the problem of automatically collecting, extracting, and summarizing large volumes of data from external APIs. Instead of time-consuming manual processing, the platform leverages the power of Amazon Bedrock (Generative AI) combined with a highly scalable AWS architecture (EC2 Auto Scaling, SQS, EventBridge) to process data periodically in a fully automated, secure, and cost-optimized manner.
 
 ### 2. Problem Statement  
 *Current Problem*  
