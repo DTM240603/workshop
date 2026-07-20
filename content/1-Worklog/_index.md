@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Over 12 weeks in the **First Cloud AI Journey** program (04/17/2026 – 07/10/2026), I progressed from learning the foundational concepts of AWS to personally designing, deploying, and operating a complete cloud project — **CloudBrief** — together with the **ITSoldier** team. The work carried out each week is detailed below.
+Over 12 weeks in the **First Cloud AI Journey** program (04/17/2026 – 07/30/2026), I progressed from learning the foundational concepts of AWS to personally designing, deploying, and operating a complete cloud project — **CloudBrief** — together with the **ITSoldier** team. The work carried out each week is detailed below.
 
 **Week 1:** [Getting Familiar with Cloud Computing and the AWS Ecosystem](1.1-week1/)
 

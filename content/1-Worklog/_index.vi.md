@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Trong suốt 12 tuần thực tập tại chương trình **First Cloud AI Journey** (17/04/2026 – 10/07/2026), em đã đi từ việc làm quen với các khái niệm nền tảng của AWS đến việc tự tay thiết kế, triển khai và vận hành một dự án cloud hoàn chỉnh — **CloudBrief** — cùng nhóm **ITSoldier**. Nội dung công việc từng tuần được trình bày chi tiết dưới đây.
+Trong suốt 12 tuần thực tập tại chương trình **First Cloud AI Journey** (17/04/2026 – 30/07/2026), em đã đi từ việc làm quen với các khái niệm nền tảng của AWS đến việc tự tay thiết kế, triển khai và vận hành một dự án cloud hoàn chỉnh — **CloudBrief** — cùng nhóm **ITSoldier**. Nội dung công việc từng tuần được trình bày chi tiết dưới đây.
 
 **Tuần 1:** [Làm quen với Điện toán đám mây và Hệ sinh thái AWS](1.1-week1/)
 
