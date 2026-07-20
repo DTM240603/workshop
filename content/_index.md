@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Team:** ITSoldier
 
-&emsp; **Internship Duration:** From 17/04/2026 to 10/07/2026
+&emsp; **Internship Duration:** From 17/04/2026 to 30/07/2026
 
 &emsp; **Company Mentor:** Nguyen Gia Hung – Head of Solution Architect
 
