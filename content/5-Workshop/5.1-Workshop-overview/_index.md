@@ -12,6 +12,10 @@ CloudBrief is an EC2-first AWS application for technology news collection and su
 
 The application collects candidate articles from RSS feeds and Hacker News, deduplicates them, extracts cleaned article text, summarizes articles with Amazon Bedrock Nova Micro or a deterministic fallback, processes cover images to WebP, and serves a public magazine, article reader, reader community, and protected operations page.
 
+#### Demo video
+
+[Watch the CloudBrief demo video](https://drive.google.com/file/d/1wOCk0e3c2jL6nVLbq-lXCWjjDkem2PBb/view?usp=sharing)
+
 #### Architecture diagram
 
 ![CloudBrief architecture](/5-workshop/images/cloudbrief-evidence/production-architecture.png)

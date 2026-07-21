@@ -30,7 +30,7 @@ The project's architecture is designed by the team to comply with security stand
 *Detailed Execution Flow:*
 1. **User Communication (Frontend)**: Users access the application via **CloudFront** (protected by **AWS WAF**). CloudFront securely distributes static content from the **S3 bucket (frontend, private, versioned)** via OAC (Origin Access Control) and configured behaviors.
 2. **Automation Trigger**: An **EventBridge Trigger** is configured to trigger every 8 hours, sending a message to an **SQS** queue to initiate the data extraction process.
-3. **Compute Network**: The system uses an **Auto Scaling Group** managing **EC2 Workers**. These servers are allocated in **Private Subnets (A and B)** (without Public IPs) to ensure security. These Workers continuously pull jobs from the queue via the **SQS VPC Endpoint**.
+3. **Compute Network & Load Balancing**: The system utilizes an **Application Load Balancer (ALB)** to balance API requests across the EC2 server cluster. These servers are managed by an **Auto Scaling Group** and are safely allocated within **Private Subnets (A and B)** (without Public IPs) to ensure security. Simultaneously, the EC2 Workers continuously pull jobs from the queue via the **SQS VPC Endpoint**.
 4. **Data Collection (Outbound Traffic)**: To retrieve data from **External APIs**, the EC2 Workers connect to the internet via a **NAT Gateway** (located in a Public Subnet) and route through an **Internet Gateway**.
 5. **Generative AI Integration**: After retrieving the data, the EC2 Worker pushes the content to **Amazon Bedrock** via the **Bedrock VPC Endpoint** for the language model to extract information and summarize.
 6. **Secure Result Storage**: 

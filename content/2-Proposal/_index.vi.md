@@ -31,7 +31,7 @@ Kiến trúc của dự án được nhóm thiết kế tuân thủ các tiêu c
 *Luồng chạy chi tiết của dự án (Execution Flow):*
 1. **Giao tiếp người dùng (Frontend)**: Người dùng truy cập ứng dụng thông qua **CloudFront** (được bảo vệ bởi **AWS WAF**). CloudFront phân phối nội dung tĩnh từ **S3 bucket (frontend, private, versioned)** một cách an toàn thông qua tính năng OAC (Origin Access Control) cùng các behavior đã thiết lập.
 2. **Kích hoạt tự động hóa**: **EventBridge Trigger** được cấu hình để kích hoạt mỗi 8 giờ, gửi thông điệp vào hàng đợi **SQS** để bắt đầu quy trình trích xuất dữ liệu.
-3. **Mạng lưới tính toán**: Hệ thống sử dụng **Auto Scaling Group** quản lý các **EC2 Worker**. Các máy chủ này được phân bổ vào các **Private Subnet (A và B)** (không có Public IP) nhằm đảm bảo an ninh. Các Worker này liên tục kéo (pull) công việc (job) từ hàng đợi thông qua **SQS VPC Endpoint**.
+3. **Mạng tính toán & cân bằng tải**: Hệ thống sử dụng **Application Load Balancer (ALB)** để cân bằng các API request đến cụm máy chủ EC2. Các máy chủ này được quản lý bởi **Auto Scaling Group** và được đặt an toàn trong **Private Subnets (A và B)** (không có Public IP) để đảm bảo bảo mật. Đồng thời, các EC2 Worker liên tục kéo (pull) công việc từ hàng đợi thông qua **SQS VPC Endpoint**.
 4. **Thu thập dữ liệu (Outbound Traffic)**: Để lấy dữ liệu từ **External API**, các EC2 Worker kết nối ra internet thông qua **NAT Gateway** (đặt ở Public Subnet) và đi qua **Internet Gateway**.
 5. **Tích hợp Generative AI**: Sau khi lấy được dữ liệu, EC2 Worker đẩy nội dung sang **Amazon Bedrock** thông qua **Bedrock VPC Endpoint** để mô hình AI xử lý ngôn ngữ thực hiện việc trích xuất thông tin và tóm tắt.
 6. **Lưu trữ kết quả an toàn**: 

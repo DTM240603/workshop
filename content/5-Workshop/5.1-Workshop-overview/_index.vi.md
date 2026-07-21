@@ -12,6 +12,10 @@ CloudBrief là ứng dụng AWS theo hướng EC2-first để thu thập và tó
 
 Ứng dụng thu thập bài viết từ RSS feeds và Hacker News, loại bỏ trùng lặp, trích xuất nội dung sạch, tóm tắt bằng Amazon Bedrock Nova Micro hoặc deterministic fallback, xử lý cover image sang WebP và cung cấp public magazine, article reader, reader community cùng protected operations page.
 
+#### Video demo
+
+[Xem video demo CloudBrief](https://drive.google.com/file/d/1wOCk0e3c2jL6nVLbq-lXCWjjDkem2PBb/view?usp=sharing)
+
 #### Sơ đồ kiến trúc
 
 ![Kiến trúc CloudBrief](/5-workshop/images/cloudbrief-evidence/production-architecture.png)
